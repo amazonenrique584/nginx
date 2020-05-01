@@ -1,0 +1,7 @@
+sudo rm -r /tmp/nginx
+
+sudo mkdir /tmp/nginx
+sudo mkdir /tmp/nginx/cache
+sudo mkdir /tmp/nginx/fastcgi
+
+sudo nginx -t && systemctl reload nginx.service
