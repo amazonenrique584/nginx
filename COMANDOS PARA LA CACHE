@@ -1,6 +1,17 @@
+https://www.scalescale.com/tips/nginx/configure-nginx-fastcgi-cache/#
+
 sudo rm -r /tmp/nginx
 
 sudo mkdir /tmp/nginx
-sudo mkdir /tmp/nginx/fastcgi
+sudo mkdir /tmp/nginx/FAST_CACHE
 
 sudo nginx -t && systemctl reload nginx.service
+
+ls -alhR /tmp/nginx/FAST_CACHE
+nano -w /etc/fstab
+	-> tmpfs /tmp/nginx/FAST_CACHE tmpfs defaults,size=256M 0 0
+
+mount -a
+
+df -ah | grep tmpfs
+
