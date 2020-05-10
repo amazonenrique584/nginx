@@ -1,0 +1,1 @@
+sudo aptitude purge nginx && sudo aptitude install nginx
