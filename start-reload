@@ -1,5 +1,7 @@
 sudo nginx -t && systemctl start nginx.service
 sudo nginx -t && systemctl reload nginx.service
 
+systemctl stop nginx.service
+
 sudo systemctl unmask nginx.service
 
