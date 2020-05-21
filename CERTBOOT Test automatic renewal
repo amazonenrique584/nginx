@@ -1,0 +1,6 @@
+https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx
+
+sudo sh -c 'printf "#!/bin/sh\nservice nginx stop\n" > /etc/letsencrypt/renewal-hooks/pre/nginx.sh'
+sudo sh -c 'printf "#!/bin/sh\nservice nginx start\n" > /etc/letsencrypt/renewal-hooks/post/nginx.sh'
+sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/nginx.sh
+sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/nginx.sh
