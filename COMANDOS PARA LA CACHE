@@ -15,3 +15,7 @@ mount -a
 
 df -ah | grep tmpfs
 
+
+https://stackoverflow.com/questions/32424661/rmdir-failed-because-of-device-or-resource-busy
+sudo umount /tmp/nginx/FAST_CACHE
+

@@ -31,7 +31,7 @@ location / {
 	fastcgi_param SERVER_NAME    $server_name;
 
 	#fastcgi_cache
-	fastcgi_cache FAST_CACHE;
+	#fastcgi_cache FAST_CACHE;
 
 }
 
