@@ -36,7 +36,7 @@ location / {
 }
 
 # CSS, Javascript, ico, jpeg
-location ~* \.(?:css|js|ico|jpg|jpeg|png)$ {
+location ~* \.(?:css|js|ico|jpg|jpeg|png|xml)$ {
 	expires 1y;
 	add_header Cache-Control "public";
 }
