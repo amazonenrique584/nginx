@@ -5,3 +5,6 @@ systemctl stop nginx.service
 
 sudo systemctl unmask nginx.service
 
+
+mkdir /tmp/nginx
+mkdir /tmp/nginx/FAST_CACHE
