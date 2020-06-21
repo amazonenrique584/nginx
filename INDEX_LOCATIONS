@@ -33,6 +33,9 @@ location / {
 	#fastcgi_cache
 	#fastcgi_cache FAST_CACHE;
 
+	#para el referrer
+	fastcgi_param HTTP_REFERER $http_referer;
+
 }
 
 # CSS, Javascript, ico, jpeg
