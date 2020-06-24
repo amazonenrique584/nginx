@@ -30,8 +30,9 @@ location / {
 	fastcgi_param SERVER_PORT    $server_port;
 	fastcgi_param SERVER_NAME    $server_name;
 
+	# FASTGI CACHE DESACTIVADO PORQUE SINO NO FUNCIONAN BIEN LOS SCRIPTS DE ROTA-RETEN-REVIENTA DE TP 
 	#fastcgi_cache
-	fastcgi_cache FAST_CACHE;
+	#fastcgi_cache FAST_CACHE;
 
 	#para el referrer
 	fastcgi_param HTTP_REFERER $http_referer;
