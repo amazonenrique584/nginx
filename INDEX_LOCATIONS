@@ -45,3 +45,8 @@ location ~* \.(?:css|js|ico|jpg|jpeg|png|xml|html)$ {
 	add_header Cache-Control "public";
 }
 
+#Adsense
+location /ads.txt {
+	alias /var/www/ads.txt; #copiamos el ads.txt original y le añadimos nuestro código de Adsense
+}
+
