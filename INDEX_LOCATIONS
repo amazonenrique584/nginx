@@ -47,6 +47,6 @@ location ~* \.(?:css|js|ico|jpg|jpeg|png|xml|html)$ {
 
 #Adsense
 location /ads.txt {
-	alias /var/www/ads.txt; #copiamos el ads.txt original y le añadimos nuestro código de Adsense
+	alias /var/www/ads.txt; #copiamos el ads.txt original y le añadimos nuestro código de Google Adsense
 }
 
